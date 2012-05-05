@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Price Check</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+<!--link rel="stylesheet" href="ios_inspired/styles.css" /-->
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova-1.x.x.js"></script>
+</head>
+<body>
+
+<body> 
+
+
+<!-- Main Menu -->
+<div data-role="page" id="Main">
+
+	<div data-role="header">
+		<h1>Price Check</h1>
+	</div>
+
+	<div data-role="content">			
+		<p><a href="#Search" data-role="button" data-transition="slide">Pesquisar Artigo</a></p>
+		<p><a href="#Update" data-role="button" data-transition="slide">Actualizar Artigo</a></p>	
+		<p><a href="#Insert" data-role="button" data-transition="slide">Inserir Artigo</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /header -->
+</div><!-- /page -->
+
+
+<!-- Search Menu -->
+<div data-role="page" id="Search">
+
+	<div data-role="header">
+		<h1>Pesquisar Artigo</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p></p>		
+		<form action="" method="post">
+			<div data-role="fieldcontain">
+				<label for="password">Codigo:</label>
+				<input type="text" name="Barcode" id="barcode" value="" />
+				<input type="submit" name="search" id="search" value="Pesquisar"/>
+		</div>
+		</form>
+		<p><a href="#Main" data-role="button" data-transition="slide" data-back="true">Cancelar</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /header -->
+</div><!-- /page -->
+
+<!-- Update Menu -->
+<div data-role="page" id="Update">
+
+	<div data-role="header">
+		<h1>Actualizar Artigo</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p></p>		
+		<form action="form.php" method="post">
+			<div data-role="fieldcontain">
+				<label for="barcode">Codigo:</label>
+				<input type="text" name="Barcode" id="barcode" value="" />
+				<input type="submit" name="search" id="search" value="Pesquisar"/>
+		</div>
+		</form>
+		<p><a href="#Main" data-role="button" data-transition="slide" data-back="true">Cancelar</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /header -->
+</div><!-- /page -->
+
+<!-- Insert Menu -->
+<div data-role="page" id="Insert">
+
+	<div data-role="header">
+		<h1>Inserir Artigo</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<form action="form.php" method="post">
+			<div data-role="fieldcontain">
+				<label for="barcode">Codigo:</label>
+				<input type="text" name="Barcode" id="barcode" value="" />
+				<label for="preco">Preço:</label>
+				<input type="text" name="Preco" id="preco" value="" />
+				<label for="select-choice-1" class="select">Supermercado:</label>
+					<select name="select-choice-1" id="select-choice-1">
+					<option value="continente">Continente</option>
+					<option value="jumbo">Jumbo</option>
+					<option value="lidl">Lidl</option>
+					<option value="pingodoce">Pingo Doce</option>
+					<option value="intermarche">Intermarche</option>
+					<option value="minipreco">Mini Preço</option>
+					<option value="carpan">Carpan</option>
+				</select>
+			</div>
+		</form>
+		<p><a href="#Main" data-role="button" data-transition="slide" data-back="true">Cancelar</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /header -->
+</div><!-- /page -->
+
+</body>
+</body>
+</html>
