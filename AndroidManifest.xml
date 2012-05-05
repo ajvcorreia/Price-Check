@@ -29,7 +29,7 @@ android:anyDensity="true"
 
     <application
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
+        android:label="Price Check" android:hardwareAccelerated="true">
         <activity
             android:name=".HelloWorldActivity"
             android:label="@string/app_name"

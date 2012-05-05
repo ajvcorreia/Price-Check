@@ -14,7 +14,7 @@
 
 
 <!-- Main Menu -->
-<div data-role="page" id="Main">
+<div data-role="page" data-theme="b" id="Main">
 
 	<div data-role="header">
 		<h1>Price Check</h1>
@@ -26,14 +26,19 @@
 		<p><a href="#Insert" data-role="button" data-transition="slide">Inserir Artigo</a></p>
 	</div><!-- /content -->
 
-	<div data-role="footer">
-		<h4></h4>
-	</div><!-- /header -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="top">
+			<ul>
+				<li><a href="#Main" data-icon="home">Inicio</a></li>
+				<li><a href="#About" data-icon="info">Sobre</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
 </div><!-- /page -->
 
 
 <!-- Search Menu -->
-<div data-role="page" id="Search">
+<div data-role="page" data-theme="b" id="Search" data-add-back-btn="true">
 
 	<div data-role="header">
 		<h1>Pesquisar Artigo</h1>
@@ -51,13 +56,18 @@
 		<p><a href="#Main" data-role="button" data-transition="slide" data-back="true">Cancelar</a></p>	
 	</div><!-- /content -->
 
-	<div data-role="footer">
-		<h4></h4>
-	</div><!-- /header -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="top">
+			<ul>
+				<li><a href="#Main" data-icon="home">Inicio</a></li>
+				<li><a href="#About" data-icon="info">Sobre</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
 </div><!-- /page -->
 
 <!-- Update Menu -->
-<div data-role="page" id="Update">
+<div data-role="page" data-theme="b" id="Update" data-add-back-btn="true">
 
 	<div data-role="header">
 		<h1>Actualizar Artigo</h1>
@@ -75,13 +85,18 @@
 		<p><a href="#Main" data-role="button" data-transition="slide" data-back="true">Cancelar</a></p>	
 	</div><!-- /content -->
 
-	<div data-role="footer">
-		<h4></h4>
-	</div><!-- /header -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="top">
+			<ul>
+				<li><a href="#Main" data-icon="home">Inicio</a></li>
+				<li><a href="#About" data-icon="info">Sobre</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
 </div><!-- /page -->
 
 <!-- Insert Menu -->
-<div data-role="page" id="Insert">
+<div data-role="page" data-theme="b" id="Insert" data-add-back-btn="true">
 
 	<div data-role="header">
 		<h1>Inserir Artigo</h1>
@@ -109,9 +124,42 @@
 		<p><a href="#Main" data-role="button" data-transition="slide" data-back="true">Cancelar</a></p>	
 	</div><!-- /content -->
 
-	<div data-role="footer">
-		<h4></h4>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="top">
+			<ul>
+				<li><a href="#Main" data-icon="home">Inicio</a></li>
+				<li><a href="#About" data-icon="info">Sobre</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+<!-- Insert Menu -->
+<div data-role="page" data-theme="b" id="About" data-add-back-btn="true">
+
+	<div data-role="header">
+		<h1>Price Check</h1>
 	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>António Correia</p>
+		<p>ajvcorreia@gmail.com</p>
+		<p>Luís Paulo</p>
+		<p>lfspaulo@gmail.com</p>
+		<p>Carlos Lopes</p>
+		<p>carloslopes.cc@gmail.com</p>
+		<p><a href="#Main" data-role="button" data-transition="slide" data-back="true">Cancelar</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="top">
+			<ul>
+				<li><a href="#Main" data-icon="home">Inicio</a></li>
+				<li><a href="#About" data-icon="info" disable>Sobre</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
 </div><!-- /page -->
 
 </body>
