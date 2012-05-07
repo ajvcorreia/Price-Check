@@ -4,10 +4,9 @@
 <title>Price Check</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/themes/my-custom-theme.css" />
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile.structure-1.1.0.min.css" /> 
 
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+<link rel="stylesheet" href="css/themes/my-custom-theme.css" />
 <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="cordova-1.x.x.js"></script>
@@ -43,6 +42,17 @@
         alert('code: '    + error.code    + '\n' +
               'message: ' + error.message + '\n');
     }
+    
+    var scanCode = function() { 
+com.phonegap.plugins.barcodeScanner.scan( 
+function(result) { 
+alert("Scanned Code: " + result.text 
++ ". Format: " + result.format 
++ ". Cancelled: " + result.cancelled); 
+}, function(error) { 
+alert("Scan failed: " + error); 
+}); 
+}
 
     </script>
 
@@ -63,6 +73,7 @@
 		<p><a href="#Search" data-role="button" data-transition="slide">Pesquisar Artigo</a></p>
 		<p><a href="#Update" data-role="button" data-transition="slide">Actualizar Artigo</a></p>	
 		<p><a href="#Insert" data-role="button" data-transition="slide">Inserir Artigo</a></p>
+		<p><a href="#" data-role="button" onclick="scanCode();">Scan Code</a></p>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-position="fixed">
